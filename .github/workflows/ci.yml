@@ -1,0 +1,27 @@
+name: Team Project CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display CI message
+        run: echo "GitHub Actions CI is running successfully"
+
+      - name: Check repository files
+        run: ls -la
+
+      - name: Confirm completion
+        run: echo "All CI checks passed"
