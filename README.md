@@ -1,3 +1,3 @@
 # Data Engineering Team Project
 
-This repository demonstrates GitHub collaboration.
+This repository demonstrates GitHub collaboration
